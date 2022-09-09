@@ -21,19 +21,27 @@ const answers = [
 ];
 
 const askButton = document.getElementById('ask');
+
 const resetButton = document.getElementById('reset');
+
 const inputsContainer = document.getElementById('inputs-Container');
+
 const fortuneContainer = document.getElementById('fortune-container');
+
 const fortune = document.getElementById('fortune');
 
 askButton.addEventListener('click', () => {
     const randNum = Math.floor(Math.random() * answers.length);
+
     fortune.textContent = answers[randNum];
+
     inputsContainer.classlist.toggle('hide');
+
     fortuneContainer.classlist.toggle('hide');
 });
 
 resetButton.addEventListener('click', () => {
     inputsContainer.classlist.toggle('hide');
+
     fortuneContainer.classlist.toggle('hide');
 });
