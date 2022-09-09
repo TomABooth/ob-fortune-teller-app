@@ -35,13 +35,13 @@ askButton.addEventListener('click', () => {
 
     fortune.textContent = answers[randNum];
 
-    inputsContainer.classlist.toggle('hide');
+    inputsContainer.classList.toggle('hide');
 
-    fortuneContainer.classlist.toggle('hide');
+    fortuneContainer.classList.toggle('hide');
 });
 
 resetButton.addEventListener('click', () => {
-    inputsContainer.classlist.toggle('hide');
+    inputsContainer.classList.toggle('hide');
 
-    fortuneContainer.classlist.toggle('hide');
+    fortuneContainer.classList.toggle('hide');
 });
