@@ -23,18 +23,19 @@
         </header>
 
         <main>
-            <div id="input-container">
+            <div id="inputs-container">
                 <label for="question">
-                    <input type="text" name="question" />
-                    <button id="ask-button">Ask the 8 ball</button>
+                    <input type="text" name="question" id="question" />
+                    <button id="ask">Ask the 8 ball</button>
                 </label>
-                <div></div>
+                <div>
                     <img src="assets/8-ball.webp" alt="magic 8 ball" />
                 </div>
             </div>
-            <div id="fortune-container">
+            <div id="fortune-container" class="hide">
                 <h3>The Magic 8 ball says...</h3>
                 <p id="fortune"></p>
+                <button id="reset">Try Again</button>
             </div>
         </main>
 

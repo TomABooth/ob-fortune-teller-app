@@ -1,8 +1,39 @@
-// import functions and grab DOM elements
+const answers = [
+    'Yes, definitely',
+    'It is certain',
+    'It is decidedly so',
+    'Without a doubt',
+    'You may rely on it',
+    'As I see it, yes',
+    'Most Likely',
+    'Outlook good',
+    'Signs point to yes',
+    'Reply hazy, try again',
+    'Ask again later',
+    'Better not tell you now',
+    'Cannot predict now',
+    'Concentrate and ask again',
+    'Don’t count on it',
+    'My reply is no',
+    'My sources say no',
+    'Outlook not so good',
+    'Very doubtful',
+];
 
-// let state
+const askButton = document.getElementById('ask');
+const resetButton = document.getElementById('reset');
+const inputsContainer = document.getElementById('inputs-Container');
+const fortuneContainer = document.getElementById('fortune-container');
+const fortune = document.getElementById('fortune');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+askButton.addEventListener('click', () => {
+    const randNum = Math.floor(Math.random() * answers.length);
+    fortune.textContent = answers[randNum];
+    inputsContainer.classlist.toggle('hide');
+    fortuneContainer.classlist.toggle('hide');
+});
+
+resetButton.addEventListener('click', () => {
+    inputsContainer.classlist.toggle('hide');
+    fortuneContainer.classlist.toggle('hide');
+});
