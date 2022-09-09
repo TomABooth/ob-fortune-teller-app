@@ -24,7 +24,7 @@ const askButton = document.getElementById('ask');
 
 const resetButton = document.getElementById('reset');
 
-const inputsContainer = document.getElementById('inputs-Container');
+const inputsContainer = document.getElementById('inputs-container');
 
 const fortuneContainer = document.getElementById('fortune-container');
 

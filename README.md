@@ -1,3 +1,5 @@
+![](./Wireframe.png)
+
 # Fortune teller plan
 
 HTML Elements
