@@ -22,14 +22,26 @@ header {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
     position: sticky;
     bottom: 0;
     padding: 7px 20px;
-    font-size: .8em;
+    font-size: 0.8em;
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.hide {
+    display: none;
 }
